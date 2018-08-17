@@ -12,11 +12,9 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
 Route::get('/v1/contacts', 'ContactsController@getAllContacts');
 Route::put('v1/contacts/update/{id}', 'ContactsController@update');
 Route::post('v1/contacts/add', 'ContactsController@create');
