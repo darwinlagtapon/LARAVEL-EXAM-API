@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 use App\Http\Request;
 use App\Repositories\ContactsRepository;
 use App\Http\Controllers\Controller;
 
 
-class ContactsController extends Controller {
+class ContactsxController extends Controller {
 
 	private $contact;
 	protected $redirectTo = '/home';
-
 
 	public function __construct(ContactsRepository $contact) 
 	{

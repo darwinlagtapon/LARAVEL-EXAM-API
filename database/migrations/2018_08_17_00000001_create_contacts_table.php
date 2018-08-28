@@ -22,7 +22,7 @@ class CreateContactsTable extends Migration
             $table->string('city');
             $table->string('region');
             $table->string('postal');
-            $table->dateTime('deleted_at');                        
+            $table->dateTime('deleted_at')->nullable();                        
             $table->timestamps();
         });
     }

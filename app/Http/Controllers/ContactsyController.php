@@ -6,7 +6,7 @@ use App\Repositories\ContactsRepository;
 use App\Http\Controllers\Controller;
 
 
-class ContactsController extends Controller {
+class ContactsyController extends Controller {
 
 	private $contact;
 	protected $redirectTo = '/home';
