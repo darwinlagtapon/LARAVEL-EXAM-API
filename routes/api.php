@@ -19,5 +19,5 @@ Route::group(['prefix' => 'v1'], function () {
 	Route::get('/contacts', 'ContactsController@getAllContacts');
 	Route::put('/contacts/{id}', 'ContactsController@update');
 	Route::post('/contacts', 'ContactsController@create');
-	Route::delete('/contacts{id}', 'ContactsController@delete');
+	Route::delete('/contacts/{id}', 'ContactsController@delete');
 });
